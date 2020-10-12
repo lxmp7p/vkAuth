@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel= "stylesheet" type= "text/css" href="/static/style.css")>
+    <title>Авторизация</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="login">
+    <fieldset class="clearfix">
+    <div id="authText">
+        {% if error %}
+            <h1>Неверный логин или пароль</h1>
+        {% else %}
+            <h1> </h1>
+        {% endif %}
+    </div>
+        <form auth-form method="post">
+            <p><span class="fontawesome-user"></span><input type="text" name="login" value="Логин" onBlur="if(this.value == '') this.value = 'Логин'" onFocus="if(this.value == 'Логин') this.value = ''" required name="login"></p> <!-- JS because of IE support; better: placeholder="Username" -->
+            <p><span class="fontawesome-lock"></span><input type="password" name="password" value="Пароль" onBlur="if(this.value == '') this.value = 'Пароль'" onFocus="if(this.value == 'Пароль') this.value = ''" required name="password">
+            <p><input type="submit" value="АВТОРИЗОВАТЬСЯ ЧЕРЕЗ ВК"></p>
+        </form>
+    </fieldset>
+</fieldset>
+</body>
+</html>
+</body>
+</html>

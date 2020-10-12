@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel= "stylesheet" type= "text/css" href="/static/adminPanel.css")>
+    <title>Admin</title>
+</head>
+<body>
+    <h1>Admin Panel</h1>
+    <hr>
+    <table>
+    <tr>
+        <th>id</th>
+        <th>Логин</th>
+        <th>Пароль</th>
+        <th>Группа</th>
+    </tr>
+    {% for row in members %}
+        <tr><td>{{ row[0] }}</td><td>{{ row[1] }}</td><td>{{ row[2] }}</td><td>{{ row[3] }}</td> </tr>
+    {% endfor %}
+
+
+</table>
+<hr>
+</body>
+</html>
